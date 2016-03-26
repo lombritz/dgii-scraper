@@ -1,0 +1,34 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Rest API - DGII Scraper") {
+
+<pre>
+Rest API - DGII Scraper
+
+This is a Rest API that validates DGII information.
+
+
+Request: /validate/rnc/:rncOrCed
+
+Validates a company by RNC or a person by Cedula on the DGII records.
+
+
+Request: /validate/ncf/:rnc/:ncf
+
+Validates a fiscal document by RNC and NCF on the DGII records.
+
+
+Note: this Rest API connects to DGII web page and uses web scraping to obtain the information, so
+this makes this service somehow unreliable in the long term.
+</pre>
+
+}
